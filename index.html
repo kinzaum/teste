@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AAC Custom Board</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body ontouchstart="">
+
+<div class="app-header">
+<h1 id="mainTitle">AAC Board</h1>
+<button id="adminToggleBtn" class="admin-toggle-btn"></button>
+</div>
+
+<div id="parentalModal" class="parental-modal">
+<div class="parental-box">
+<button class="close-modal-btn" id="closeModalBtn">✕</button>
+<h4 id="modalTitle">Controle Parental</h4>
+<p id="modalInstruction">Arraste para a direita para confirmar que você é um adulto.</p>
+
+<div class="slider-track">
+<span class="slider-label" id="sliderLabel">Slide >></span>
+<input type="range" min="0" max="100" value="0" class="ios-slider" id="parentalSlider">
+</div>
+</div>
+</div>
+
+<div id="creatorPanel" class="creator-panel">
+<div class="creator-form">
+<div class="form-group">
+<label id="lblBoardTitle" for="boardTitle"></label>
+<input type="text" id="boardTitle">
+</div>
+
+<div class="form-group">
+<label id="lblCardWord" for="cardWord"></label>
+<input type="text" id="cardWord">
+</div>
+
+<div class="form-group">
+<label id="lblCardImage" for="cardImage"></label>
+<input type="file" id="cardImage" accept="image/*">
+</div>
+
+<div class="panel-sections-container">
+<div class="panel-actions">
+<button id="addCardBtn" class="action-btn"></button>
+<button id="clearBoardBtn" class="action-btn"></button>
+</div>
+
+<div class="backup-actions">
+    <button id="exportBtn" class="action-btn backup-btn"></button>
+    <button id="importBtn" class="action-btn backup-btn" onclick="document.getElementById('importFile').click()"></button>
+    <input type="file" id="importFile" accept=".json">
+</div>
+</div>
+</div>
+</div>
+
+<div id="mainLayoutContainer" class="main-layout">
+<div id="sidebarTabs" class="sidebar-tabs"></div>
+
+<div class="board-chassis">
+<div id="boardHeader" class="board-header"></div>
+
+<div class="scroll-frame">
+<div id="gridDisplay" class="grid-container"></div>
+</div>
+</div>
+</div>
+
+<div id="deviceWarning" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:white; z-index:9999; text-align:center; padding-top:20%;">
+    <h2>Dispositivo não compatível!!!</h2>
+    <p>Por favor, use um tablet ou Ipad para acessar o CAAOPEN Board.</p>
+</div> 
+
+<!-- Order matters! -->
+<script src="app.js"></script>
+<script src="ui.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
