@@ -52,12 +52,34 @@ const modalInstruction = document.getElementById('modalInstruction');
 const sliderLabel = document.getElementById('sliderLabel');
 
 // Swipe support
-let touchStartX = 0;
-document.addEventListener('touchstart', e => touchStartX = e.changedTouches[0].screenX);
+let touchStartX = null; // Use null to signify "no active swipe"
+
+document.addEventListener('touchstart', e => {
+    // Check if the target is part of the parental modal or the slider
+    const isInsideModal = e.target.closest('.parental-box') || e.target.closest('.ios-slider');
+    
+    // Only set touchStartX if we are NOT inside a modal
+    if (!isInsideModal) {
+        touchStartX = e.changedTouches[0].screenX;
+    } else {
+        touchStartX = null; // Explicitly nullify if they touch inside a modal
+    }
+});
+
 document.addEventListener('touchend', e => {
+    // If we didn't start a swipe on the main page, do nothing
+    if (touchStartX === null) return;
+
     let touchEndX = e.changedTouches[0].screenX;
-    if (touchStartX - touchEndX > 50) changePage(1);  // Swipe Left
-    if (touchEndX - touchStartX > 50) changePage(-1); // Swipe Right
+    
+    // Calculate distance
+    let diff = touchStartX - touchEndX;
+
+    if (diff > 50) changePage(1);  // Swipe Left
+    if (diff < -50) changePage(-1); // Swipe Right
+    
+    // Reset after processing
+    touchStartX = null;
 });
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -333,11 +355,15 @@ function swapCards(id1, id2) {
     const index1 = board.cards.findIndex(c => c.id === id1);
     const index2 = board.cards.findIndex(c => c.id === id2);
 
-    // Swap positions in the array
-    [board.cards[index1], board.cards[index2]] = [board.cards[index2], board.cards[index1]];
-
-    saveState();
-    renderBoard();
+    if (index1 > -1 && index2 > -1) {
+        [board.cards[index1], board.cards[index2]] = [board.cards[index2], board.cards[index1]];
+        
+        // ADD THIS RESET:
+        selectedSwapCardId = null; 
+        
+        saveState();
+        renderBoard();
+    }
 }
 
 function swapBoards(id1, id2) {
@@ -345,11 +371,13 @@ function swapBoards(id1, id2) {
     const index2 = appState.boards.findIndex(b => b.id === id2);
 
     if (index1 > -1 && index2 > -1) {
-        // Swap positions in the array
         [appState.boards[index1], appState.boards[index2]] = [appState.boards[index2], appState.boards[index1]];
         
+        // ADD THIS RESET:
+        selectedSwapBoardId = null; 
+        
         saveState();
-        renderBoard(); // Re-renders the sidebar and grid
+        renderBoard();
     }
 }
 
