@@ -158,18 +158,6 @@ button:disabled {
 }
 
 
-.aac-card[draggable="true"] {
-    cursor: grab;
-}
-
-
-.aac-card[draggable="true"]:active {
-    cursor: grabbing;
-    opacity: 0.6;
-    transform: scale(0.95);
-}
-
-
 #importFile { display: none; }
 
 
@@ -309,6 +297,10 @@ button:disabled {
     border-radius: 8px;
     transition: background 0.2s ease;
     flex-shrink: 0;
+    cursor: pointer;
+    user-select: none;         /* Standard */
+    -webkit-user-select: none; /* Safari/iOS */
+    -webkit-tap-highlight-color: transparent; /* Removes the gray flash on tap */
 }
 .tab-row:hover {
     background: #f0f0f0;
@@ -424,16 +416,6 @@ button:disabled {
     z-index: 10;
 }
 
-/* Add this to your style.css */
-.tab-row[draggable="true"]:hover {
-    background-color: #f0f0f0;
-    cursor: move;
-}
-
-.tab-row.drag-over {
-    border-top: 2px solid #007bff;
-}
-
 .grid-slot.edit-active {
     border: 2px dashed #ff9900;
     background: #fff9e6;
@@ -456,6 +438,12 @@ button:disabled {
     justify-content: center; /* Centraliza o conjunto todo */
     align-items: center;
     overflow: hidden;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    user-select: none;         /* Standard */
+    -webkit-user-select: none; /* Safari/iOS */
+    -webkit-tap-highlight-color: transparent; /* Removes the gray flash on tap */
+    cursor: pointer;
+     /* Adiciona uma transição suave para o efeito de clique */
 }
 
 
@@ -482,6 +470,14 @@ button:disabled {
     transform: scale(0.95);
     border-color: var(--primary-color);
     box-shadow: 0 0 12px rgba(0, 204, 68, 0.5);
+}
+
+/* Add this to your style.css */
+.selected-for-swap {
+    outline: 5px solid #28a745; /* Green border to show it's selected */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
+    z-index: 10;
 }
 
 
