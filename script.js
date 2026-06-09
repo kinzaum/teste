@@ -299,7 +299,7 @@ addCardBtn.addEventListener('click', async () => {
         appState.boards.push(targetBoard);
         appState.activeBoardId = targetBoard.id;
     }
-    if (targetBoard.cards.length >= 16) return alert(currentLang.alertFull);
+    if (targetBoard.cards.length >= 100) return alert(currentLang.alertFull);
 
     try {
         addCardBtn.disabled = true;
