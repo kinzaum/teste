@@ -1,6 +1,7 @@
 {
   "pt": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ Manutenção programada para segunda-feira (10/08): Por favor, salve (exporte) seus quadros!",
     "lblBoardTitle": "1. Título da Prancha:",
     "phBoardTitle": "ex: Família, Rotina, Comida",
     "lblCardWord": "2. Palavra do Card / Legenda:",
@@ -29,6 +30,7 @@
   },
   "en": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ Scheduled maintenance for Monday (Aug 10): Please save (export) your boards!",
     "lblBoardTitle": "1. Board Title:",
     "phBoardTitle": "e.g., Family, Routine, Food",
     "lblCardWord": "2. Card Word / Caption:",
@@ -57,6 +59,7 @@
   },
   "es": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ Mantenimiento programado para el lunes (10/08): ¡Por favor, guarde (exporte) sus tableros!",
     "lblBoardTitle": "1. Título del Tablero:",
     "phBoardTitle": "ej: Familia, Rutina, Comida",
     "lblCardWord": "2. Palabra del Tarjeta / Leyenda:",
@@ -85,6 +88,7 @@
   },
   "de": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ Geplante Wartung am Montag (10.08.): Bitte speichern (exportieren) Sie Ihre Boards!",
     "lblBoardTitle": "1. Board-Titel:",
     "phBoardTitle": "z.B. Familie, Routine, Essen",
     "lblCardWord": "2. Kartenwort / Beschriftung:",
@@ -113,6 +117,7 @@
   },
   "fr": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ Maintenance programmée lundi (10/08) : Veuillez sauvegarder (exporter) vos tableaux !",
     "lblBoardTitle": "1. Titre du Tableau:",
     "phBoardTitle": "ex: Famille, Routine, Nourriture",
     "lblCardWord": "2. Mot de la Carte / Légende:",
@@ -141,6 +146,7 @@
   },
   "ar": {
     "mainTitle": "لوحة التواصل البديل المخصصة",
+    "maintenanceMessage": "⚠️ صيانة مجدولة يوم الاثنين (10/08): يرجى حفظ (تصدير) لوحاتك!",
     "lblBoardTitle": "1. عنوان اللوحة:",
     "phBoardTitle": "مثال: العائلة، الروتين، الطعام",
     "lblCardWord": "2. كلمة البطاقة / التعليق:",
@@ -169,6 +175,7 @@
   },
   "it": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ Manutenzione programmata per lunedì (10/08): Si prega di salvare (esportare) le tabelle!",
     "lblBoardTitle": "1. Titolo della Tabella:",
     "phBoardTitle": "es: Famiglia, Routine, Cibo",
     "lblCardWord": "2. Parola della Carta / Didascalia:",
@@ -197,6 +204,7 @@
   },
   "nl": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ Gepland onderhoud op maandag (10/08): Sla uw boards alstublieft op (exporteer ze)!",
     "lblBoardTitle": "1. Board Titel:",
     "phBoardTitle": "bijv: Familie, Routine, Voedsel",
     "lblCardWord": "2. Kaartwoord / Onderschrift:",
@@ -225,6 +233,7 @@
   },
   "pl": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ Zaplanowana konserwacja na poniedziałek (10.08): Proszę zapisać (wyeksportować) swoje tablice!",
     "lblBoardTitle": "1. Tytuł Tablicy:",
     "phBoardTitle": "np. Rodzina, Rutyna, Jedzenie",
     "lblCardWord": "2. Słowo na Karcie / Podpis:",
@@ -253,6 +262,7 @@
   },
   "tr": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ Pazartesi (10.08) için planlı bakım: Lütfen panolarınızı kaydedin (dışa aktarın)!",
     "lblBoardTitle": "1. Pano Başlığı:",
     "phBoardTitle": "örn: Aile, Rutin, Yemek",
     "lblCardWord": "2. Kart Kelimesi / Altyazı:",
@@ -281,6 +291,7 @@
   },
   "ja": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ 8月10日（月）に予定されているメンテナンス：ボードを保存（エクスポート）してください！",
     "lblBoardTitle": "1. ボードのタイトル:",
     "phBoardTitle": "例：家族、ルーティン、食事",
     "lblCardWord": "2. カードの単語 / キャプション:",
@@ -309,6 +320,7 @@
   },
   "ko": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ 8월 10일(월) 예정된 유지보수: 보드를 저장(내보내기)해 주세요!",
     "lblBoardTitle": "1. 보드 제목:",
     "phBoardTitle": "예: 가족, 일과, 음식",
     "lblCardWord": "2. 카드 단어 / 자막:",
@@ -337,6 +349,7 @@
   },
   "pt-PT": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ Manutenção programada para segunda-feira (10/08): Por favor, guarde (exporte) os seus quadros!",
     "lblBoardTitle": "1. Título do Quadro:",
     "phBoardTitle": "ex: Família, Rotina, Alimentação",
     "lblCardWord": "2. Palavra do Cartão / Legenda:",
@@ -365,6 +378,7 @@
   },
   "gn": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ Mondepyhareko ojejapótava arakõi (10/08): Emoñongatu (emongu) ne ogykeuéra, por favor!",
     "lblBoardTitle": "1. Ogyke Téra:",
     "phBoardTitle": "Techapyrã: Rogaygua, Tembiapo, Tembi'u",
     "lblCardWord": "2. Ta'anga Ñe'ẽ / Tembiapo Téra:",
@@ -393,6 +407,7 @@
   },
   "hi": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ सोमवार (10/08) को निर्धारित रखरखाव: कृपया अपने बोर्ड सहेजें (निर्यात करें)!",
     "lblBoardTitle": "1. बोर्ड का शीर्षक:",
     "phBoardTitle": "उदा: परिवार, दिनचर्या, भोजन",
     "lblCardWord": "2. कार्ड का शब्द / कैप्शन:",
@@ -421,6 +436,7 @@
   },
   "bn": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ আগামী সোমবার (১০/০৮) নির্ধারিত রক্ষণাবেক্ষণ: অনুগ্রহ করে আপনার বোর্ডগুলি সংরক্ষণ (এক্সপোর্ট) করুন!",
     "lblBoardTitle": "1. বোর্ডের শিরোনাম:",
     "phBoardTitle": "যেমন: পরিবার, রুটিন, খাবার",
     "lblCardWord": "2. কার্ডের শব্দ / ক্যাপশন:",
@@ -430,7 +446,7 @@
     "editModeOff": "সম্পাদনা মোড: বন্ধ",
     "editModeOn": "সম্পাদনা মোড: চালু",
     "clearBoardBtn": "সব রিসেট করুন",
-    "emptyBoardState": "শুরু করার জন্য একটি বোর্ড তৈরি করুন",
+    "emptyBoardState": "শुरू करने के लिए एक board बनाएं",
     "alertNoTitle": "অনুগ্রহ করে বোর্ডটির শিরোনাম দিন।",
     "alertNoWord": "অনুগ্রহ করে কার্ডের শব্দ লিখুন।",
     "alertNoFile": "অনুগ্রহ করে আপনার ডিভাইস থেকে একটি ছবি বেছে নিন।",
@@ -449,6 +465,7 @@
   },
   "ru": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ Запланированное обслуживание на понедельник (10.08): Пожалуйста, сохраните (экспортируйте) свои доски!",
     "lblBoardTitle": "1. Название доски:",
     "phBoardTitle": "напр.: Семья, Рутина, Еда",
     "lblCardWord": "2. Слово карточки / Подпись:",
@@ -477,6 +494,7 @@
   },
   "zh": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ 定于周一（8月10日）进行计划维护：请保存（导出）您的沟通板！",
     "lblBoardTitle": "1. 沟通板标题:",
     "phBoardTitle": "例如：家人、日常、食物",
     "lblCardWord": "2. 卡片词语 / 标签:",
@@ -505,6 +523,7 @@
   },
   "ur": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ پیر (10/08) کو طے شدہ مینٹیننس: براہ کرم اپنے بورڈز محفوظ (ایکسپورٹ) کریں!",
     "lblBoardTitle": "1. بورڈ کا عنوان:",
     "phBoardTitle": "مثال: خاندان، معمول، کھانا",
     "lblCardWord": "2. کارڈ کا لفظ / کیپشن:",
@@ -533,6 +552,7 @@
   },
   "bg": {
     "mainTitle": "Caaopen.org",
+    "maintenanceMessage": "⚠️ Планирана поддръжка за понеделник (10.08): Моля, запазете (експортирайте) вашите табла!",
     "lblBoardTitle": "1. Заглавие на таблото:",
     "phBoardTitle": "напр.: Семейство, Рутина, Храна",
     "lblCardWord": "2. Дума върху картата / Надпис:",
