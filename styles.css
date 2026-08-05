@@ -73,15 +73,28 @@ body {
 
 .creator-form {
     display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.creator-form .form-row {
+    display: flex;
     flex-wrap: wrap;
     gap: 12px;
     align-items: flex-end;
+    width: 100%;
 }
 
 
 .form-group {
     flex: 1;
     min-width: 180px;
+}
+
+.action-group {
+    display: flex;
+    align-items: flex-end;
+    min-width: 140px;
 }
 
 
@@ -108,7 +121,7 @@ input[type="text"], input[type="file"] {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin-top: 12px;
+    margin-top: 4px;
     border-top: 1px solid #eee;
     padding-top: 12px;
 }
@@ -142,7 +155,11 @@ button.action-btn {
 }
 
 
-#addCardBtn { background-color: var(--primary-color); }
+#addCardBtn { 
+    background-color: var(--primary-color); 
+    width: 100%;
+    height: 35px; /* Matches standard input height alignment */
+}
 #addCardBtn:hover { background-color: #00aa38; }
 #clearBoardBtn { background-color: #ff3333; }
 #clearBoardBtn:hover { background-color: #cc0000; }
