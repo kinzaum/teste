@@ -79,20 +79,21 @@ body {
 
 .creator-form .form-row {
     display: flex;
-    flex-wrap: nowrap; /* Keeps everything on a single line */
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 12px;
     align-items: flex-end;
     width: 100%;
 }
 
 
-.form-group {
-    flex: 1; /* Makes all 3 input fields share equal horizontal space */
+.creator-form .form-row .form-group {
+    flex: 1;
     min-width: 0;
 }
 
-.action-group {
-    flex: 0 0 auto; /* Keeps the Add to Board button sized naturally to its content */
+.creator-form .form-row .action-group {
+    flex: 0 0 auto;
     display: flex;
     align-items: flex-end;
 }
