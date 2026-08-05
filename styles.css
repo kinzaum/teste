@@ -79,7 +79,7 @@ body {
 
 .creator-form .form-row {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; /* Keeps everything on a single line */
     gap: 12px;
     align-items: flex-end;
     width: 100%;
@@ -87,12 +87,12 @@ body {
 
 
 .form-group {
-    flex: 1;
+    flex: 1; /* Makes all 3 input fields share equal horizontal space */
     min-width: 0;
 }
 
 .action-group {
-    flex: 0 0 160px;
+    flex: 0 0 auto; /* Keeps the Add to Board button sized naturally to its content */
     display: flex;
     align-items: flex-end;
 }
@@ -104,8 +104,6 @@ label {
     margin-bottom: 4px;
     font-size: 13px;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 
@@ -159,6 +157,9 @@ button.action-btn {
 
 #addCardBtn { 
     background-color: var(--primary-color); 
+    height: 35px;
+    padding: 0 20px;
+    white-space: nowrap;
 }
 #addCardBtn:hover { background-color: #00aa38; }
 #clearBoardBtn { background-color: #ff3333; }
@@ -398,7 +399,6 @@ button:disabled {
     gap: 8px; /* Reduzido para dar mais espaço */
     width: 100%;
     height: 100%;
-    /* Removemos restrições rígidas para deixar o flexbox/grid decidir */
 }
 
 
@@ -460,7 +460,6 @@ button:disabled {
     -webkit-user-select: none; /* Safari/iOS */
     -webkit-tap-highlight-color: transparent; /* Removes the gray flash on tap */
     cursor: pointer;
-     /* Adiciona uma transição suave para o efeito de clique */
 }
 
 
@@ -489,7 +488,6 @@ button:disabled {
     box-shadow: 0 0 12px rgba(0, 204, 68, 0.5);
 }
 
-/* Add this to your style.css */
 .selected-for-swap {
     outline: 5px solid #28a745; /* Green border to show it's selected */
     border-radius: 10px;
